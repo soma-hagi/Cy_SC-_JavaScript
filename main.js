@@ -31,3 +31,47 @@ const array_2 = [
 
 console.log(array_2);
 console.log(array_2[0][2]);
+
+// オブジェクト（モノ）
+const member = {
+  // キー：バリュー
+  'name': '本田', 
+  'height': 170, 
+  'hobby': 'サッカー'
+};
+
+console.log(member);
+
+console.log(member['name']);
+
+console.log(member.hobby);
+
+const member_2 = {
+  '本田':{
+    'height':170, 
+    'hobby':'サッカー'
+  }, 
+  '香川':{
+    'height':165, 
+    'hobby':'サッカー'
+  }
+};
+
+console.log(member_2['香川']['height']);
+
+console.log(member_2.香川.height);
+
+const member_3 = {
+  '1kumi':{
+    '本田':{
+      'heigit':170, 
+      'hobby':'サッカー'
+    }, 
+    '香川':{}
+  }, 
+  '2kumi':{
+
+  }
+};
+
+console.log(member_3['1kumi']['本田']['hobby']);

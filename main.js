@@ -82,3 +82,37 @@ const test_2 = 3;
 const test_3 = test_1 + test_2; 
 
 console.log(test_3);
+
+const height = '90';
+
+if(height === '90'){
+  console.log('身長は' + height + 'cmです');
+} else {
+  console.log('身長は90cmではありません');
+}
+
+const signal = 'blue';
+
+if ( signal === 'red' ){
+  console.log('止まれ'); 
+} else if ( signal === 'yellow'){
+  console.log('一旦停止');
+} else {
+  console.log('進む');
+}
+
+const speed = 60;
+
+if (signal === 'blue'){
+  if (speed >= 60){   // ネスト
+    console.log('スピード違反');
+  }
+}
+
+if(height >= '90'){
+  console.log('身長は' + height + 'cmです');
+} 
+
+if(height <= '90'){
+  console.log('身長は' + 90 + 'cm以下です');
+} 

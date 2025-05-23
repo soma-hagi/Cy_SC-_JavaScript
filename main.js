@@ -129,3 +129,20 @@ const score = 80;
 const comment = score > 80 ? 'good' : 'not good';  
 
 console.log(comment)
+
+const data = 1; 
+
+switch(data){
+  case 1:
+    console.log('1です'); 
+    break;
+  case 2:
+    console.log('1です'); 
+    break;
+  case 3:
+    console.log('1です'); 
+    break;
+  default:
+    console.log('1-3ではありません');
+    break;
+}

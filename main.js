@@ -148,26 +148,97 @@
 // }
 
 
-function test(){
-  console.log('テスト');
-}
+// function test(){
+//   console.log('テスト');
+// }
 
-test();
+// test();
 
 
-const comment = 'コメント';
+// const comment = 'コメント';
 
-function getComment(string){
-  console.log(string);
-}
+// function getComment(string){
+//   console.log(string);
+// }
 
-getComment(comment);
+// getComment(comment);
 
-function sumPrice(int1, int2){
-  let int3 = int1 + int2;
-  return int3;
-}
+// function sumPrice(int1, int2){
+//   let int3 = int1 + int2;
+//   return int3;
+// }
 
-const total = sumPrice(3, 5);
+// const total = sumPrice(3, 5);
 
-console.log(total);
+// console.log(total);
+
+// const test = 'テスト';
+// const test_2 = 'です';
+
+// console.log(test.concat(test_2));
+
+// const myMap = new Map();
+
+// myMap.set('id', 3);
+// myMap.set('name', '本田');
+
+// console.log(myMap);
+// // keyとvalueがそれぞれ出力される。  
+
+// console.log(myMap.get('name'));
+// // 出力：本田
+
+// const valueList = myMap.values();
+
+// for ( value of valueList ){
+//   console.log(value);
+// }
+
+// // 出力：３、本田
+
+// const fruits = new Array();
+const fruits = [ // シンタックスシュガー（簡単に書く書き方）  
+  'りんご', 'バナナ'
+];
+
+console.log(fruits);
+
+fruits.push('みかん');
+
+console.log(fruits);
+
+fruits.forEach(function(input){
+  console.log(input);
+});
+
+const test = { // 簡単な書き方
+  test1:10, 
+  test2:20, 
+  test3:30
+};
+
+/* console.log(test.values);
+Objectの場合は特殊でこれでは出力されない
+*/
+
+console.log(Object.values(test));
+
+for ( value of Object.values(test) ){
+  console.log(value);
+};
+
+const person = {
+  name: '本田', 
+  age: 30, 
+
+  getName(){
+    console.log(this.name);
+    return this; // このオブジェクト自体(person)を返す
+  }, 
+  getAge(){
+    console.log(this.age);
+    return this; // このオブジェクト自体を返す
+  }
+};
+
+person.getName().getAge();

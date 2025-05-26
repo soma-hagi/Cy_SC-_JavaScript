@@ -117,32 +117,57 @@
 //   console.log('身長は' + 90 + 'cm以下です');
 // } 
 
-const color = '青'
-const season = '夏'
-if ( color === '青' && season === '夏' ){
-  console.log ( color + 'と' + season );
+// const color = '青'
+// const season = '夏'
+// if ( color === '青' && season === '夏' ){
+//   console.log ( color + 'と' + season );
+// }
+
+
+// const score = 80; 
+
+// const comment = score > 80 ? 'good' : 'not good';  
+
+// console.log(comment)
+
+// const data = 1; 
+
+// switch(data){
+//   case 1:
+//     console.log('1です'); 
+//     break;
+//   case 2:
+//     console.log('1です'); 
+//     break;
+//   case 3:
+//     console.log('1です'); 
+//     break;
+//   default:
+//     console.log('1-3ではありません');
+//     break;
+// }
+
+
+function test(){
+  console.log('テスト');
 }
 
+test();
 
-const score = 80; 
 
-const comment = score > 80 ? 'good' : 'not good';  
+const comment = 'コメント';
 
-console.log(comment)
-
-const data = 1; 
-
-switch(data){
-  case 1:
-    console.log('1です'); 
-    break;
-  case 2:
-    console.log('1です'); 
-    break;
-  case 3:
-    console.log('1です'); 
-    break;
-  default:
-    console.log('1-3ではありません');
-    break;
+function getComment(string){
+  console.log(string);
 }
+
+getComment(comment);
+
+function sumPrice(int1, int2){
+  let int3 = int1 + int2;
+  return int3;
+}
+
+const total = sumPrice(3, 5);
+
+console.log(total);

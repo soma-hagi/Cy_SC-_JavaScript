@@ -4,27 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    .red{
+      color:red;
+    }
+    .blue{
+      color:blue;
+    }
+  </style>
 </head>
 <body>
-  <p>あああ</p>
-  <p>あああ</p>
-  <p>あああ</p>
 
-  <span>いいい</span>
-  <span>いいい</span>
-  <span>いいい</span>
+  <div id="test">
+    <ul>
+      <li class="test_list blue">テスト1</li>
+      <li class="test_list">テスト2</li>
+      <li class="test_list">テスト3</li>
+    </ul>
+  </div>
 
-  <!-- HTML4 -->
-  <div id="header"></div>
-  <div id="main"></div>
-  <div id="footer"></div>
+  <script>
+    // const test = document.getElementById('test');
+    const test = document.getElementById('test').classList.add('red');
+    // test.classList.add('red');
+    // 返り値 Element.classList.toggle
 
-  <!-- HTML5 -->
-  <header></header>
-  <main></main>
-  <section class="member"></section>
-  <section class="information"></section>
-  <footer></footer>
+    // const testList = document.querySelector('.test_list');
+    // testList.classList.remove('blue');
+
+
+    // const testLists = document.querySelectorAll('.test_list');
+    // console.log(test);
+    // console.log(testList);
+    // console.log(testLists);
+  </script>
 
 </body>
 </html>

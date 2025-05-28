@@ -16,28 +16,16 @@
 </head>
 <body>
 
-  <div id="test">
-    <ul>
-      <li class="test_list blue">テスト1</li>
-      <li class="test_list">テスト2</li>
-      <li class="test_list">テスト3</li>
-    </ul>
-  </div>
-
+  <div id="test"></div>
+  <button id="target">押してね</button>
   <script>
-    // const test = document.getElementById('test');
-    const test = document.getElementById('test').classList.add('red');
-    // test.classList.add('red');
-    // 返り値 Element.classList.toggle
+    const target = document.getElementById('target');
 
-    // const testList = document.querySelector('.test_list');
-    // testList.classList.remove('blue');
-
-
-    // const testLists = document.querySelectorAll('.test_list');
-    // console.log(test);
-    // console.log(testList);
-    // console.log(testLists);
+    target.addEventListener('click', () => {
+      const test = document.getElementById('test');
+      test.textContent = 'テスト';
+      test.classList.add('red');
+    })
   </script>
 
 </body>
